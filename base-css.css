@@ -12,15 +12,22 @@
 }
   
 h1 {
-    font-family: Solberry!important;
-    text-align: center;
-    border-bottom: solid var(--secondary);
-    font-size: 8em!important;
-    line-height:.8em;
-    font-weight:normal!important;
-    -webkit-column-span: all;
+  color: var(--secondary)!important;
+  font-size: 5em!important;
+  border-bottom: solid 2px var(--primary);
+  column-span: all;
+	text-align:center
 }
-  
+#p1 h1 {
+  font-family: Solberry;
+  text-align: center;
+  border-bottom: solid var(--secondary);
+  font-size: 8em!important;
+  line-height:.8em;
+  font-weight:normal;
+  -webkit-column-span: all;
+	color:var(--primary)!important;
+} 
 h2 {
     color: var(--secondary)!important;
     font-size: 5em!important;
@@ -63,7 +70,7 @@ h6 {
     font-weight: bold;
 }
 p {
-    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important; /* sets font type */
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
     text-align: justify!important;
     padding-bottom: 0!important;
     margin-bottom: 1em;
@@ -82,12 +89,8 @@ li::marker{
     font-weight:700;
     content:"▸"
 }
-h2 + p::first-letter {
-    float: left;
-    font-family: Solberry;
-    font-size: 5em;
-    color: #222;
-    line-height: .8em;
+h1 + p::first-letter {
+    font-size: 5em!important;
   }
 .wide h1{
     margin-top: .2em;
@@ -96,7 +99,7 @@ h2 + p::first-letter {
     border-bottom:none;
 }
 #p1{
-        column-fill: balance;
+	column-fill: balance;
 }
 a:-webkit-any-link {
     color: var(--secondary);
