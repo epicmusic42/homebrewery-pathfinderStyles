@@ -1,0 +1,319 @@
+
+/*=======---  Example CSS styling  ---=======*/
+/* Any CSS here will apply to your document! */
+
+:root {  
+  --primary: #5e0000; /*  */
+  --secondary: #171f69; /*  */
+  --tertiary: #c9ad6a; /*  */
+  --uncommon: #c45500;
+	--rare: #0c1466;
+	--trait:#522e2c;
+	--move: #2d4934;
+	--flourish:#672281;
+	--body:#58180D;
+	--feature:#c9ad6a6e;
+}
+
+h1 {
+  font-family: Solberry!important;
+	text-align: center;
+	border-bottom: solid var(--secondary);
+	font-size: 8em!important;
+	line-height:.8em;
+	font-weight:normal!important;
+	-webkit-column-span: all;
+}
+
+h2 {
+  color: var(--secondary)!important;
+	font-size: 5em!important;
+	border-bottom: solid 2px var(--primary);
+	column-span: all;
+}
+h3 {
+    color: var(--body);
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+}
+h3 a:-webkit-any-link {
+    color: var(--body);
+		text-shadow: none;
+		font-style: normal;
+    text-decoration: none;
+}
+h3 a:hover:-webkit-any-link {
+    color: var(--secondary);
+		text-shadow: 0 0 var(--secondary);
+		font-style: italic;
+    cursor: pointer;
+    text-decoration: underline;
+}
+h4 {
+    color: var(--body);
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+}
+h5 {
+  color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	text-transform: uppercase;
+	margin-bottom: -0.5em;
+	padding-bottom: 0;
+	border-bottom: solid var(--primary);
+}
+h6 {
+  color: var(--secondary);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+p {
+	font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important; /* sets font type */
+	text-align: justify!important;
+	padding-bottom: 0!important;
+	margin-bottom: 1em;
+}
+strong {
+	font-weight: bold;
+  letter-spacing: .03em;
+  text-shadow: 0 0 black;
+}
+ul li{
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+    margin-top: 0.5em;
+}
+ul li::marker{
+    color:var(--primary);
+    content:"▸"
+}
+ol li::marker{
+    color:var(--primary);
+    font-weight:700
+}
+.traits {
+    display: block;
+    float: left;
+    padding: 0;
+	  margin-right: 0.2em;
+    flex-direction: row;
+}
+.traits p {
+  color:#fff;
+	background-color: var(--trait);
+  display:inline-flex;
+  font-family:OpenDyslexic,Roboto Condensed,serif!important;
+  font-size:.8em;
+  padding: 0.25em!important;
+	border: solid 2px var(--tertiary);
+  text-indent: inherit;
+  text-transform:uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.description {
+  margin-bottom: 1em;
+    background-color: #faf7ea;
+    border-style: solid;
+    border-width: 7px;
+    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAA8CAMAAADG+c2+AAAAM1BMVEUAAAAAAAAAAAAkAAA1GwA0GgA5GgA5GwA4HgA7HgA5HgA7HgA7HwA7HgA8HgA7HgA8HwDn6RpAAAAAEHRSTlMAAQcHMDExQ1ZW1dXY3t7+02zZCAAAAKNJREFUWMPt2LEOwyAMBNCkSXGpKfb/f20G3AGUiWOJdNlueYrt6di2J3xHrmZF9mVCdnd3T/NgCO+ItUWdB0P4RrQWfR4chOVggUcu/cgCH0X6o+ynuivg3QjIAm8FggQJEiRIkCBBggQJEoTApO56An15EFIrVgJ4vaAtlnlwEKKbGrLATlgOxg9XeORfv9IMH+Xzb7tSzGo+gL7chNcjXpUulIwXVrjWS+0AAAAASUVORK5CYII=) 12 stretch;
+    border-image-outset: 4px;
+    box-shadow: 0 0 6px #faf7ea;
+    color: var(--primary);
+    font-size: .423cm;
+    font-style: italic;
+    margin-top: -1em;
+}
+a:-webkit-any-link {
+    color: var(--secondary);
+		text-shadow: 0 0 var(--secondary);
+		font-style: italic;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.clear{
+    clear:both;
+}
+.feature {
+	margin-left: auto;
+	margin-right:auto;
+	background-color:var(--feature);
+	padding: 2.5%
+}
+.feature table {
+	margin-bottom:0.25em!important;
+}
+.feature table th:nth-child(1) {
+	text-align: left!important;
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	text-transform: uppercase;
+	margin-bottom: -0.5em;
+	padding-bottom: 0;
+	border-bottom: 2px solid var(--primary);
+	font-size: .423cm;
+	font-weight: 900;
+}
+.feature table th:nth-child(2) {
+	text-align: right!important;
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	text-transform: uppercase;
+	margin-bottom: -0.5em;
+	padding-bottom: 0;
+	border-bottom: 2px solid var(--primary);
+	font-size: .423cm;
+	font-weight: 900;
+	min-width:5em;
+}
+.feature table td {
+	display:none;
+}
+.feature p {
+	text-align: justify;
+	margin-bottom: 0;
+}
+.feature p+p {
+	margin-top: 0;
+}
+.feature h4 {
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	padding-bottom: 0!important;
+	font-size:1.2em;
+}
+.feature hr {
+	margin: 0.25em 0 0.25em 0;
+	visibility: visible;
+	border-bottom: solid thin var(--primary)
+}
+.ability {
+	padding-left: 1em;
+}
+.ability ul {
+	column-count: 2;
+}
+.ability ul li {
+	margin-top:0
+}
+.ability h4 {
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	border-bottom: solid var(--primary);
+}
+.ability h5 {
+  color: var(--secondary);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: solid 0.2em var(--secondary)
+}
+.endnote {
+	text-align: center;
+  border-top: solid 2px rgba(9.02,12.16,41.18,.5);
+  position: absolute;
+  right: 2.5%;
+  top: 90%;
+  z-index: 150;
+  font-size: .8em;
+  color: var(--secondary);
+  width: 95%;
+}
+.endnote table {
+	width: 40%;
+	margin-left: 5%;
+	margin-top:0.5em;
+}
+.endnote table thead {
+	display:none;
+}
+.endnote table tbody tr:nth-child(odd) {
+	background: transparent;
+}
+.endnote td {
+	opacity: 100%;
+}
+.endnote td:nth-child(1){
+	text-align:center;
+}
+.endnote td:nth-child(2){
+	text-align:left;
+	padding-left: 1em;
+}
+h2 + p::first-letter {
+    float: left;
+    font-family: Solberry;
+    font-size: 5em;
+    color: #222;
+    line-height: .8em;
+  }
+.wide h1{
+	margin-top: .2em;
+  margin-bottom: .2em;
+  font-family: MrJeeves!important;
+	border-bottom:none;
+}
+#p1{
+		column-fill: balance;
+}
+.spell {
+	margin-left: auto;
+	margin-right:auto;
+	background-color:var(--feature);
+	padding: 2.5%
+}
+.spell ul {
+	column-count: 2;
+}
+.spell ul li {
+	margin-top:0
+}
+.spell h4 {
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	border-bottom: solid var(--primary);
+}
+.spell h5 {
+  color: var(--secondary);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: solid 0.2em var(--secondary);
+	margin-top: 0.5em
+}
+.spell hr {
+	margin: 0.25em 0 0.25em 0;
+	visibility: visible;
+	border-bottom: solid thin var(--secondary)
+}
+.spell p {
+	margin-bottom: 0;
+}
+.spell table {
+	margin-bottom:0.25em!important;
+}
+.spell table th:nth-child(1) {
+	text-align: left!important;
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	text-transform: uppercase;
+	margin-bottom: -0.5em;
+	padding-bottom: 0;
+	border-bottom: 2px solid var(--primary);
+	font-size: .423cm;
+}
+.spell table th:nth-child(2) {
+	text-align: right!important;
+	color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	text-transform: uppercase;
+	margin-bottom: -0.5em;
+	padding-bottom: 0;
+	border-bottom: 2px solid var(--primary);
+	font-size: .423cm;
+	min-width:5em;
+}
+.spell table td {
+	display:none;
+}
+.ancestry 
+}
