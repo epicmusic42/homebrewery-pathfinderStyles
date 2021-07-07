@@ -12,7 +12,7 @@
 }
   
 h1 {
-  color: var(--secondary)!important;
+  color: var(--primary)!important;
   font-size: 5em!important;
   border-bottom: solid 2px var(--primary);
   column-span: all;
