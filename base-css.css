@@ -20,6 +20,7 @@ h1 {
 }
 #p1 h1 {
   font-family: Solberry;
+  color: var(--secondary)!important;
   text-align: center;
   border-bottom: solid var(--secondary);
   font-size: 8em!important;
