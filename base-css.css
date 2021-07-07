@@ -12,38 +12,41 @@
 }
   
 h1 {
-  color: var(--primary)!important;
-  font-size: 5em!important;
-  border-bottom: solid 2px var(--primary);
-  column-span: all;
+	color: var(--primary)!important;
+	font-size: 5em!important;
+	border-bottom: solid 2px var(--primary);
+	column-span: all;
 	text-align:center
 }
 #p1 h1 {
-  font-family: Solberry;
-  color: var(--secondary)!important;
-  text-align: center;
-  border-bottom: solid var(--secondary);
-  font-size: 8em!important;
-  line-height:.8em;
-  font-weight:normal;
-  -webkit-column-span: all;
-	color:var(--primary)!important;
+	font-family: OpenDyslexic;
+	color: var(--secondary)!important;
+	text-align: center;
+	border-bottom: solid var(--secondary);
+	font-size: 7em!important;
+	line-height:.8em;
+	-webkit-column-span: all;
 } 
+#p1 h1::first-letter {
+	font-family:Solberry;
+	font-size:1.5em!important;
+	text-shadow: 1px 1px var(--primary);
+}
 h2 {
-    color: var(--secondary)!important;
-    font-size: 5em!important;
-    border-bottom: solid 2px var(--primary);
-    column-span: all;
+	color: var(--secondary)!important;
+	font-size: 5em!important;
+	border-bottom: solid 2px var(--primary);
+	column-span: all;
 }
 h3 {
-    color: var(--body);
-    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+	color: var(--body);
+	font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
 }
 h3 a:-webkit-any-link {
-    color: var(--body);
-    text-shadow: none;
-    font-style: normal;
-    text-decoration: none;
+	color: var(--body);
+	text-shadow: none;
+	font-style: normal;
+	text-decoration: none;
 }
 h3 a:hover:-webkit-any-link {
     color: var(--secondary);
