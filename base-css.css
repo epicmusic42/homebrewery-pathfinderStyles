@@ -16,7 +16,8 @@ h1 {
 	font-size: 5em!important;
 	border-bottom: solid 2px var(--primary);
 	column-span: all;
-	text-align:center
+	text-align:center;
+	font-weight:normal;
 }
 #p1 h1 {
 	font-family: OpenDyslexic;
@@ -26,6 +27,7 @@ h1 {
 	font-size: 7em!important;
 	line-height:.8em;
 	-webkit-column-span: all;
+	font-weight:normal;
 } 
 #p1 h1::first-letter {
 	font-family:Solberry;
