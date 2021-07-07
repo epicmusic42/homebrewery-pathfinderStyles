@@ -1,0 +1,159 @@
+:root {  
+    --primary: #5e0000; /*  */
+    --secondary: #171f69; /*  */
+    --tertiary: #c9ad6a; /*  */
+    --uncommon: #c45500;
+    --rare: #0c1466;
+    --trait:#522e2c;
+    --move: #2d4934;
+    --flourish:#672281;
+    --body:#58180D;
+    --feature:#c9ad6a6e;
+}
+  
+h1 {
+    font-family: Solberry!important;
+    text-align: center;
+    border-bottom: solid var(--secondary);
+    font-size: 8em!important;
+    line-height:.8em;
+    font-weight:normal!important;
+    -webkit-column-span: all;
+}
+  
+h2 {
+    color: var(--secondary)!important;
+    font-size: 5em!important;
+    border-bottom: solid 2px var(--primary);
+    column-span: all;
+}
+h3 {
+    color: var(--body);
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+}
+h3 a:-webkit-any-link {
+    color: var(--body);
+    text-shadow: none;
+    font-style: normal;
+    text-decoration: none;
+}
+h3 a:hover:-webkit-any-link {
+    color: var(--secondary);
+    text-shadow: 0 0 var(--secondary);
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: underline;
+}
+h4 {
+    color: var(--body);
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+}
+h5 {
+    color: var(--body);
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+    text-transform: uppercase;
+    margin-bottom: -0.5em;
+    padding-bottom: 0;
+    border-bottom: solid var(--primary);
+}
+h6 {
+    color: var(--secondary);
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+p {
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important; /* sets font type */
+    text-align: justify!important;
+    padding-bottom: 0!important;
+    margin-bottom: 1em;
+}
+strong {
+    font-weight: bold;
+    letter-spacing: .03em;
+    text-shadow: 0 0 black;
+}
+ul li{
+    font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+    margin-top: 0.5em;
+}
+li::marker{
+    color:var(--primary);
+    font-weight:700;
+    content:"▸"
+}
+h2 + p::first-letter {
+    float: left;
+    font-family: Solberry;
+    font-size: 5em;
+    color: #222;
+    line-height: .8em;
+  }
+.wide h1{
+    margin-top: .2em;
+  margin-bottom: .2em;
+  font-family: MrJeeves!important;
+    border-bottom:none;
+}
+#p1{
+        column-fill: balance;
+}
+
+/************************************
+        Trait Tag Formatting
+*************************************/ 
+.traits {
+      display: block;
+      float: left;
+      padding: 0;
+        margin-right: 0.2em;
+      flex-direction: row;
+  }
+.traits p {
+    color:#fff;
+      background-color: var(--trait);
+    display:inline-flex;
+    font-family:OpenDyslexic,Roboto Condensed,serif!important;
+    font-size:.8em;
+    padding: 0.25em!important;
+      border: solid 2px var(--tertiary);
+    text-indent: inherit;
+    text-transform:uppercase;
+      margin-top: 0;
+      margin-bottom: 0;
+}
+/************************************
+        Endnote Formatting
+*************************************/ 
+.endnote {
+    text-align: center;
+  border-top: solid 2px rgba(9.02,12.16,41.18,.5);
+  position: absolute;
+  right: 2.5%;
+  top: 90%;
+  z-index: 150;
+  font-size: .8em;
+  color: var(--secondary);
+  width: 95%;
+}
+.endnote table {
+    width: 40%;
+    margin-left: 5%;
+    margin-top:0.5em;
+}
+.endnote table thead {
+    display:none;
+}
+.endnote table tbody tr:nth-child(odd) {
+    background: transparent;
+}
+.endnote td {
+    opacity: 100%;
+}
+.endnote td:nth-child(1){
+    text-align:center;
+}
+.endnote td:nth-child(2){
+    text-align:left;
+    padding-left: 1em;
+}
