@@ -98,6 +98,13 @@ h2 + p::first-letter {
 #p1{
         column-fill: balance;
 }
+a:-webkit-any-link {
+    color: var(--secondary);
+    text-shadow: 0 0 var(--secondary);
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: underline;
+}
 .clear{
     clear:both;
 }
