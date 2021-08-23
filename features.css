@@ -245,3 +245,10 @@
 .ancestry table td {
     padding-bottom:0!important
 }
+
+/************************************
+        Note Formatting
+*************************************/
+blockquote table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
