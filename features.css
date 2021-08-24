@@ -173,6 +173,7 @@
     display:none;
 }
 
+
 /************************************
         Ancestry Formatting
 *************************************/ 
@@ -251,4 +252,55 @@
 *************************************/
 blockquote table tbody tr:nth-child(odd) {
     background-color: #fff;
+}
+
+/************************************
+        Roll Table Formatting
+*************************************/
+.roll-table :nth-child(1){
+    width: 50px;
+}
+
+
+/************************************
+        Spell Table Formatting
+*************************************/
+.spell-table {
+    margin-left: auto;
+    margin-right:auto;
+    background-color:var(--feature);
+    padding: 2.5%
+}
+.spell-table ul {
+    column-count: 2;
+}
+.spell-table ul li {
+    margin-top:0
+}
+.spell-table h4 {
+    color: var(--body);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+    border-bottom: solid var(--primary);
+}
+.spell-table h5 {
+  color: var(--secondary);
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: solid 0.2em var(--secondary);
+    margin-top: 0.5em
+}
+.spell-table hr {
+    margin: 0.25em 0 0.25em 0;
+    visibility: visible;
+    border-bottom: solid thin var(--secondary)
+}
+.spell-table p {
+    margin-bottom: 0;
+}
+.spell-table table th {
+	font-size:1.1em;
+}
+.spell-table table tbody tr:nth-child(odd) {
+    background-color: var(--tertiary);
 }
