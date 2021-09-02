@@ -9,8 +9,7 @@
     --flourish:#672281;
     --body:#58180D;
     --feature:#c9ad6a6e;
-}
-  
+} 
 h1 {
 	color: var(--primary)!important;
 	font-size: 5em!important;
@@ -95,6 +94,14 @@ li::marker{
     font-weight:700;
     content:"▸"
 }
+li {
+  font-family: OpenDyslexic,Roboto,system,-apple-system,sans-serif!important;
+  margin-top: 0.5em;
+  text-align: justify!important;
+  padding-bottom: 0!important;
+  line-height: 1.3em;
+  padding-left:1.5em;
+}
 h1 + p::first-letter {
     font-size: 5em!important;
   }
@@ -104,6 +111,13 @@ h1 + p::first-letter {
   font-family: MrJeeves!important;
     border-bottom:none;
 }
+h2 + p::first-letter {
+    float: left;
+    font-family: Solberry;
+    font-size: 5em;
+    color: #222;
+    line-height: .8em;
+  }
 #p1{
 	column-fill: balance;
 }
@@ -145,7 +159,7 @@ a:-webkit-any-link {
         Endnote Formatting
 *************************************/ 
 .endnote {
-    text-align: center;
+  text-align: center;
   border-top: solid 2px rgba(9.02,12.16,41.18,.5);
   position: absolute;
   right: 2.5%;
@@ -154,25 +168,26 @@ a:-webkit-any-link {
   font-size: .8em;
   color: var(--secondary);
   width: 95%;
+
 }
 .endnote table {
-    width: 40%;
-    margin-left: 5%;
-    margin-top:0.5em;
+	width: 40%;
+	margin-left: 5%;
+	margin-top:0.5em;
 }
 .endnote table thead {
-    display:none;
+	display:none;
 }
 .endnote table tbody tr:nth-child(odd) {
-    background: transparent;
+	background: transparent;
 }
 .endnote td {
-    opacity: 100%;
+	opacity: 100%;
 }
 .endnote td:nth-child(1){
-    text-align:center;
+	text-align:center;
 }
 .endnote td:nth-child(2){
-    text-align:left;
-    padding-left: 1em;
+	text-align:left;
+	padding-left: 1em;
 }
